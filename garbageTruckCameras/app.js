@@ -10,6 +10,7 @@ var geolib = require('geolib');
 var GPS = require('./node_modules/gps/gps.js');
 var app = express();
 var GPSarray = []
+var prevLAT
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
